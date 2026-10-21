@@ -1,6 +1,6 @@
 # kairos-ideas-mod-cmdc
 
-A [Command Code](https://commandcode.ai) mod that captures ideas as you talk: **Jev** (the Command Code decision model) judges whether an idea is worth remembering, and the worthwhile ones are committed to **[Kairos](https://kairos.adeno.ltd)** through the Adeno API so you can circle back to them later.
+A [Command Code](https://commandcode.ai) mod that captures ideas as you talk: **[Jev](https://docs.typesafe.ai/)** — TypeSafe's decision model, provided through Command Code — judges whether an idea is worth remembering, and the worthwhile ones are committed to **[Kairos](https://kairos.adeno.ltd)** through the Adeno API so you can circle back to them later.
 
 ## What it does
 
