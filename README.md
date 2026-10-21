@@ -41,7 +41,7 @@ Key resolution order: `--mod-option adeno_api_key=…` → stored key → `ADENO
 
 ## How it decides
 
-Jev answers typed questions about a state with probabilities. The mod asks one question — "is this idea specific and important enough to commit to the user's planner so they circle back to it later?" — and weighs the framing (an idea you say you've been thinking about scores high unless it is clearly trivial). Jev is headless-only, so the mod shells out to `cmd -p '<request JSON>' -m typesafe/jev` and reads the probability back.
+**Jev** — made by [TypeSafe](https://docs.typesafe.ai/), provided through Command Code (which is how this mod uses it) — answers typed questions about a state with probabilities. The mod asks one question — "is this idea specific and important enough to commit to the user's planner so they circle back to it later?" — and weighs the framing (an idea you say you've been thinking about scores high unless it is clearly trivial). Jev is headless-only, so the mod shells out to `cmd -p '<request JSON>' -m typesafe/jev` and reads the probability back.
 
 Above the threshold, the idea is sent to Kairos `POST /v1/ingest`, which parses it into tasks/notes for your account.
 
@@ -51,5 +51,5 @@ The API key is stored locally in `~/.commandcode/mods/.store/kairos-idea.json` (
 
 ## Requirements
 
-- Command Code with the `typesafe/jev` decision model available.
+- Command Code with the `typesafe/jev` decision model available (Jev is TypeSafe's model, offered through Command Code).
 - An Adeno API key with the `kairos:ingest:write` scope (mint one in your Adeno account → API).
